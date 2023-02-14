@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      /* Add your custom CSS styles here */
+        body {
+        background-color: #F4F6F8;
+        background-image: url('4871703.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        }
+
+        .container {
+        text-align: center;
+        }
+
+        .letter {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        }
+        
+        h1 {
+            padding: 20px;
+        }
+
+        p {
+        font-size: 20px;
+        color: #444;
+        margin-right: 50px;
+        margin-left: 50px;
+        }
+
+        p:last-child::before {
+        content: "\2665 ";
+        color: red;
+        }
+      
+      img:hover {
+        transform: scale(1.3);
+        transition: transform 0.5s;
+        cursor: pointer;
+      }
+
+      img {
+        max-width: 500px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+      }
+
+      .troll {
+        margin: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 style="text-align: center; font-size: 5rem; color: #e60073; margin: 0;">Happy <span style="color: #b30059;">Valentine's</span> Day!</h1>
+      <div class="letter">
+        <p>Dear Arella,</p>
+        <p>Thanks for continuing to support me whether it be academics or personal. I appreciate your presence and am grateful for having you in my life.</p>
+        <p>I wish you the best in the upcoming years to come.</p>
+        <p>I hope you have a wonderful Valentine's Day and that we can share many more happy memories together in the future.</p>
+        <p>Love, Anson</p>
+      </div>
+      <p style = "margin-top: 20px;">Hover stitch and have a good time!</p>
+      <div>
+        <audio id = "audio" src = "song.mp3"></audio>
+        <img src="wp10701968.jpg" class="stitch">
+      </div>
+      
+
+      <div class = "troll">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">PS: Here's a picture of me with lipstick</a>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const audio = document.getElementById("audio");
+    const stitch = document.querySelector(".stitch");
+    
+    stitch.addEventListener("mouseover", () => {
+      audio.play();
+    });
+  </script>
+
+</html>
